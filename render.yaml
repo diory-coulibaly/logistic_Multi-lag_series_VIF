@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: logistic_lag_streamlit_time_series_splits_VIF
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run logistic_lag_streamlit_time_series_splits_VIF.py --server.port 8080 --server.enableCORS false
