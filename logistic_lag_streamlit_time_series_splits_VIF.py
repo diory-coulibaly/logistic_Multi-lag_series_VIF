@@ -19,6 +19,10 @@ from lime.lime_tabular import LimeTabularExplainer
 
 st.set_page_config(page_title="GOOG Lag Prediction", layout="wide")
 st.title("📈 Predict GOOG Direction with Lagged Features")
+# 📷 Quick preview of expected CSV format
+from PIL import Image
+image = Image.open("Goog.JPG")
+st.image(image, caption="CSV Format: Stocks, SP500", use_container_width=True, output_format="JPEG")
 
 # --- Sidebar UI ---
 with st.sidebar:
